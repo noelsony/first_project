@@ -8,31 +8,34 @@
     color: #fff;
     background-color: #676F54;
     font-family: 'Vesper Libre', serif;
- 
+
     display:flex;
     justify-content: center;
 }
 .menu {
-    width: 100%;
-    color: #fff;
-    background-color: #676F54;
-    font-family: 'Vesper Libre', serif;
-    position: fixed;
+    width: 1200px;
 
     display:flex;
     justify-content: space-between;
 }
-/* .booking {
-    margin-left: auto;
-}
-.contact {
-    margin-left: 30px;
-} */
+ul {
+  list-style: none;
 
+  display: flex;
+  justify-content: flex-end;
+}
+ul li{
+  padding: 10px 20px;
+}
+ul .home{
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-start;
+}
 
 a:link,
-a:visited,
-a:active{
+a:visited{
     color:#fff;
     text-decoration: none;
 }
@@ -40,7 +43,12 @@ a:hover{
     color:rgb(200, 200, 200);
     text-decoration: none;
 }
+a:active{
+  color:#fff;
+  text-decoration: none;
+}
 
+.about-container,
 .header-container {
     color: #fff;
     background-color: #896279;
@@ -49,7 +57,7 @@ a:hover{
     display: flex;
     justify-content: center;
 }
- .header>img {
+ .header img {
     width: 200px;
  }
  .header {
