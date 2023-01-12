@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="home"><a href="./home.html">Home</a></div>
+            <div class="booking"><a href="./booking.html">Booking</a></div>
+            <div class="about"><a href="#about-us">About Us</a></div>
+            <div class="contact"><a href="#contact-us">Contact Us</a></div>
+        </div>
+    </div>
+    
+    <div class="form-container">
+        <form class="form-box">
+            <input class="form" type="text" placeholder="Enter your name">
+            <input class="form" type="text" placeholder="Dog Breed">
+            <input class="form" type="number" min='0' placeholder="Dog age in years">
+            
+            <label for="size" class="form">Dog Size</label>
+            <select id="size">
+                <option value="S">Small(less than 24lbs)</option>
+                <option value="M">Medium(between 24-59lbs)</option>
+                <option value="M">Large(more than 59lbs)</option>
+            </select>
+
+            <label for="start-datetime" class="form" >Start Date and Time</label>
+            <input type="datetime-local" id="start-datetime">
+            
+            <label for="end-datetime" class="form" >End Date and Time</label>
+            <input type="datetime-local" id="start-datetime">
+
+            <label for="vacc-certificate" class="form" >Vaccination Certificate</label>
+            <input type="file" id="vacc-certificate">
+
+            <textarea class="form" id="add" name="text-area" rows="5" cols="33" placeholder="Additional Details"></textarea>
+            <input class="form" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

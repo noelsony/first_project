@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #676F54;
+    font-family: 'Vesper Libre', serif;
+ 
+    display:flex;
+    justify-content: center;
+}
+.menu {
+    width: 100%;
+    color: #fff;
+    background-color: #676F54;
+    font-family: 'Vesper Libre', serif;
+    position: fixed;
+
+    display:flex;
+    justify-content: space-between;
+}
+/* .booking {
+    margin-left: auto;
+}
+.contact {
+    margin-left: 30px;
+} */
+
+
+a:link,
+a:visited,
+a:active{
+    color:#fff;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+.header-container {
+    color: #fff;
+    background-color: #896279;
+    font-family: 'Vesper Libre', serif;
+
+    display: flex;
+    justify-content: center;
+}
+ .header>img {
+    width: 200px;
+ }
+ .header {
+    width: 1000px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.photo-grid-container {
+    background-color:#F3FFB9;
+
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 400px;
+  }
+  .photo-grid {
+    width: 1200px;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .photo-grid-item {
+    width: 400px;
+    height: 300px;
+  }
+  .first-item {
+    order: -1;
+  }
+  .last-item {
+    order: 1;
+  }
+
+
+  .footer {
+    background-color: #676F54;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-one {
+    height: 200px;
+
+  }
+
+
+ .form-contatiner {
+  color: #fff;
+  background-color: #676F54;
+  font-family: 'Vesper Libre', serif;
+
+  display:flex;
+  justify-content: center;
+ }
+ .form-box{
+  width: 1000px;
+  margin-left: 20px;
+
+  display:flex;
+  flex-direction: column;
+}
+.form {
+  margin-top: 20px;
+}
+
+.about {
+  width:900px;
+  text-align: center;
+  margin: 40px 0 40px 0;
+}
+
+.contact-container {
+  color: #000;
+  background-color: #F3FFB9;
+  font-family: 'Vesper Libre', serif;
+
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  width:900px;
+  text-align: center;
+  margin: 40px 0 40px 0;
+}
