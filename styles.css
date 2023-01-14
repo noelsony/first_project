@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {
+  --brown: #483D03;
+  --ochre: #d5a021;
+  --alabaster: #ede7d9;
+}
+
 body {
   font-family: 'Vesper Libre', serif;
 }
 
 .menu-container {
     color: #fff;
-    background-color: #676F54;
+    background-color: var(--brown);
 
     display:flex;
     justify-content: center;
@@ -53,7 +59,7 @@ a:active{
 .about-container,
 .header-container {
     color: #fff;
-    background-color: #896279;
+    background-color: var(--ochre);
 
     display: flex;
     justify-content: center;
@@ -72,7 +78,7 @@ a:active{
 
 
 .photo-grid-container {
-    background-color:#F3FFB9;
+    background-color:var(--alabaster);
 
     display: flex;
     justify-content: center;
@@ -100,11 +106,11 @@ a:active{
 .about {
   width:900px;
   text-align: center;
-  padding: 40px 0 40px 0;
+  padding: 40px 20px 40px 20px;
 }
 .contact-container {
   color: #000;
-  background-color: #F3FFB9;
+  background-color: var(--alabaster);
 
   margin: auto;
   display: flex;
@@ -113,12 +119,12 @@ a:active{
 .contact {
   width:900px;
   text-align: center;
-  padding: 40px 0 40px 0;
+  padding: 40px 20px 40px 20px;
 }
 
   
-.footer {
-  background-color: #676F54;
+footer {
+  background-color: var(--brown);
   height: 150px;
 }
 
@@ -128,13 +134,25 @@ a:active{
   justify-content: center;
 
  }
+
  .form{
-  width: 800px;
+  width: 60%;
   margin-left: 20px;
 
   display:flex;
   flex-direction: column;
 }
+ @media only screen and (max-width: 500px) {
+  
+ .form{
+  width: 90%;
+  margin-left: 20px;
+
+  display:flex;
+  flex-direction: column;
+}
+
+ }
 .form-item {
   margin-top: 20px;
 }
