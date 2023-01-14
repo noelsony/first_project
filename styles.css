@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+  font-family: 'Vesper Libre', serif;
+}
+
 .menu-container {
     color: #fff;
     background-color: #676F54;
-    font-family: 'Vesper Libre', serif;
 
     display:flex;
     justify-content: center;
@@ -25,11 +28,9 @@ ul {
   justify-content: flex-end;
 }
 ul li{
-  padding: 10px 20px;
+  padding: 7px 20px;
 }
 ul .home{
-  list-style: none;
-
   display: flex;
   justify-content: flex-start;
 }
@@ -44,15 +45,15 @@ a:hover{
     text-decoration: none;
 }
 a:active{
-  color:#fff;
+  color:rgb(230,230,230);
   text-decoration: none;
 }
+
 
 .about-container,
 .header-container {
     color: #fff;
     background-color: #896279;
-    font-family: 'Vesper Libre', serif;
 
     display: flex;
     justify-content: center;
@@ -76,8 +77,10 @@ a:active{
     display: flex;
     justify-content: center;
   }
-  img {
+  .photo-grid img {
     width: 400px;
+    min-height: 100%;
+    min-width: 100%;
   }
   .photo-grid {
     width: 1200px;
@@ -86,67 +89,52 @@ a:active{
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
+    overflow: hidden;
   }
   .photo-grid-item {
     width: 400px;
     height: 300px;
   }
-  .first-item {
-    order: -1;
-  }
-  .last-item {
-    order: 1;
-  }
 
 
-  .footer {
-    background-color: #676F54;
-    display: flex;
-    justify-content: space-between;
-  }
+.about {
+  width:900px;
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
+.contact-container {
+  color: #000;
+  background-color: #F3FFB9;
 
-  .footer-one {
-    height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  width:900px;
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
 
-  }
-
-
- .form-contatiner {
-  color: #fff;
+  
+.footer {
   background-color: #676F54;
-  font-family: 'Vesper Libre', serif;
+  height: 150px;
+}
 
+
+.form-contatiner {
   display:flex;
   justify-content: center;
+
  }
- .form-box{
-  width: 1000px;
+ .form{
+  width: 800px;
   margin-left: 20px;
 
   display:flex;
   flex-direction: column;
 }
-.form {
+.form-item {
   margin-top: 20px;
-}
-
-.about {
-  width:900px;
-  text-align: center;
-  margin: 40px 0 40px 0;
-}
-
-.contact-container {
-  color: #000;
-  background-color: #F3FFB9;
-  font-family: 'Vesper Libre', serif;
-
-  display: flex;
-  justify-content: center;
-}
-
-.contact {
-  width:900px;
-  text-align: center;
-  margin: 40px 0 40px 0;
 }
