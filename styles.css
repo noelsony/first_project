@@ -5,7 +5,7 @@
 }
 
 :root {
-  --brown: #483D03;
+  --brown: #1d1d1d;
   --ochre: #d5a021;
   --alabaster: #ede7d9;
 }
@@ -100,7 +100,7 @@ a:active{
   .photo-grid-item {
     width: 400px;
     height: 300px;
-  }
+}
 
 
 .about {
@@ -122,6 +122,34 @@ a:active{
   padding: 40px 20px 40px 20px;
 }
 
+.testimonial-container h2{
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+.testimonial {
+  margin:20px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 20px;
+}
+.testimonial:nth-child(2n-1) {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
   
 footer {
   background-color: var(--brown);
@@ -129,30 +157,57 @@ footer {
 }
 
 
-.form-contatiner {
+.form-inst-container {
   display:flex;
-  justify-content: center;
-
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
  }
-
  .form{
-  width: 60%;
+  width: 450px;
   margin-left: 20px;
 
   display:flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
- @media only screen and (max-width: 500px) {
-  
- .form{
-  width: 90%;
-  margin-left: 20px;
-
-  display:flex;
-  flex-direction: column;
-}
-
- }
 .form-item {
   margin-top: 20px;
 }
+
+
+.form input:not(input[type='file']),
+.form select,
+.form textarea{
+  font-family: 'Vesper Libre',serif;
+  border: 1px solid var(--brown);
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 3px 7px;
+}
+
+.instructions {
+  width: 450px;
+  margin: 20px 20px 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+  .form,
+  .instructions{
+   width: 90%;
+ }
+ .form-inst-container {
+  flex-direction: column;
+ }
+ .testimonial {
+  flex-direction: column;
+ }
+ .testimonial:nth-child(2n-1) {
+  text-align: start;
+  flex-direction: column;
+ }
+ }

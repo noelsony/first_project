@@ -21,33 +21,50 @@
     </span>
   </nav>  
     
-  <section class="form-container">
-    <form class="form">
-      <input class="form-item" type="text" placeholder="Owner Name">
-      <input class="form-item" type="text" placeholder="Phone Number">
-      <input class="form-item" type="text" placeholder="Email">
-      <input class="form-item" type="text" placeholder="Dog Breed">
-      <input class="form-item" type="number" min='0' placeholder="Dog age in years">
+  <section class="form-inst-container">
+    <form action="" method="get" class="form">
+      <input class="form-item" type="text" name="owner-name" placeholder="Owner Name" required>
+      <input class="form-item" type="tel" name="ph-no" placeholder="Phone Number" required>
+      <input class="form-item" type="email" name="email" placeholder="Email" required>
+      <input class="form-item" type="text" name="breed" placeholder="Dog Breed" required>
+      <input class="form-item" type="number" name="age" min='0' placeholder="Dog age in years" required>
       
       <label for="size" class="form-item">Dog Size</label>
-      <select id="size">
-        <option value="S">Small(less than 24lbs)</option>
-        <option value="M">Medium(between 24-59lbs)</option>
-        <option value="M">Large(more than 59lbs)</option>
+      <select id="size" name="size" required>
+        <option value="s">Small(less than 24lbs)</option>
+        <option value="m">Medium(between 24-59lbs)</option>
+        <option value="l">Large(more than 59lbs)</option>
       </select>
 
       <label for="start-datetime" class="form-item" >Start Date and Time</label>
-      <input type="datetime-local" id="start-datetime">
+      <input type="datetime-local" id="start-datetime" name="start-datetime" required>
       
       <label for="end-datetime" class="form-item" >End Date and Time</label>
-      <input type="datetime-local" id="start-datetime">
+      <input type="datetime-local" id="start-datetime" name="start-datetime" required>
 
       <label for="vacc-certificate" class="form-item" >Vaccination Certificate</label>
-      <input type="file" id="vacc-certificate">
+      <input type="file" id="vacc-certificate" name="vacc-certificate" required>
 
-      <textarea class="form-item" id="add" name="text-area" rows="5" cols="33" placeholder="Additional Remarks"></textarea>
+      <textarea class="form-item" id="add" name="add" rows="5" cols="33" placeholder="Additional Remarks"></textarea>
       <input class="form-item" type="submit" value="Submit">
     </form>
+
+    <div class="instructions">
+      <h3>Instructions</h3>
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, modi fugiat nam tempora aperiam cumque impedit laudantium illum eveniet sint eaque hic et consectetur corporis fugit esse minus minima. Rem.
+        </li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi itaque voluptates delectus, cum expedita debitis unde reprehenderit incidunt? Nulla quas obcaecati quasi tempore, ullam animi eligendi adipisci eum et doloribus?
+        </li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dolor provident officiis exercitationem tenetur quas nesciunt molestiae sequi fugit odit quam esse, quae ipsam sapiente aut illum debitis? Id, molestiae.
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem et architecto quae velit, corrupti maiores, earum unde maxime voluptate tempora consectetur qui vel. Consequuntur doloribus ducimus sequi vel fugiat maxime!
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam laborum fugit doloribus tempore quia similique, ut possimus deleniti quaerat assumenda neque optio quasi fuga illo vitae velit odit corrupti! Earum.
+        </li>
+      </ol>
+    </div>
+    
   </section>
 </body>
 </html>
