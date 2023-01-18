@@ -27,18 +27,14 @@ body {
     display:flex;
     justify-content: space-between;
 }
-ul {
-  list-style: none;
 
+ul {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
 }
 ul li{
+  list-style: none;
   padding: 7px 20px;
-}
-ul .home{
-  display: flex;
-  justify-content: flex-start;
 }
 
 a:link,
@@ -78,7 +74,7 @@ a:active{
 
 
 .photo-grid-container {
-    background-color:var(--alabaster);
+    background-color: var(--alabaster);
 
     display: flex;
     justify-content: center;
@@ -86,13 +82,11 @@ a:active{
   .photo-grid img {
     width: 400px;
     min-height: 100%;
-    min-width: 100%;
   }
   .photo-grid {
     width: 1200px;
 
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     overflow: hidden;
@@ -112,26 +106,26 @@ a:active{
   color: #000;
   background-color: var(--alabaster);
 
-  margin: auto;
   display: flex;
   justify-content: center;
 }
 .contact {
   width:900px;
   text-align: center;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 20px;
 }
 
-.testimonial-container h2{
-  width: 100%;
+.testimonial-container{
+  background-color: var(--alabaster);
   text-align: center;
-  padding-top: 40px;
+  padding: 40px 10px;
 }
 .testimonial {
-  margin:20px;
   border: 1px solid #000;
   border-radius: 7px;
   padding: 15px;
+  margin:20px;
+  text-align: start;
 
   display: flex;
   flex-direction: row;
@@ -165,16 +159,14 @@ footer {
  }
  .form{
   width: 450px;
-  margin-left: 20px;
+  margin: 10px 20px;
 
   display:flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .form-item {
   margin-top: 20px;
 }
-
 
 .form input:not(input[type='file']),
 .form select,
@@ -192,7 +184,6 @@ footer {
 
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 500px) {
@@ -205,9 +196,10 @@ footer {
  }
  .testimonial {
   flex-direction: column;
+  text-align: center;
  }
  .testimonial:nth-child(2n-1) {
-  text-align: start;
+  text-align: center;
   flex-direction: column;
  }
  }
